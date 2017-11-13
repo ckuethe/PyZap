@@ -30,6 +30,7 @@ tune_info.vpid       = 0x61 #97
 tune_info.apid       = 0x63 #99
 
 dvr = 1
+permit_psi = True
 
-retval = c_azap_tune_silent(tuner_info, tune_info, dvr, c_status_receiver)
+retval = c_azap_tune_silent(tuner_info, tune_info, dvr, permit_psi, c_status_receiver)
 
